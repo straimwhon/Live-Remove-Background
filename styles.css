@@ -1,0 +1,104 @@
+/* Add Alata font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alata:wght@400;700&display=swap');
+
+/* Add Gotham font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.header {
+    background-color: #0a2e6b;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Gotham', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-image {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.header-text {
+    font-size: 30px; /* Adjust font size as needed */
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px; /* Adjust padding as needed */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center text for better readability on small screens */
+}
+
+.image {
+    max-height: 700px; /* Set a maximum height */
+    width: 100%; /* Make image responsive */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.text-container {
+    max-width: 100%; /* Make text container full width on smaller screens */
+}
+
+.text {
+    font-family: 'Alata', sans-serif;
+    font-size: 20px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for readability */
+    color: #333; /* Adjust color if needed */
+    margin: 0 auto; /* Center text on the page */
+}
+
+.start-button-link {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+.start-button {
+    width: 100%; /* Make button responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add smooth transition for hover effect */
+    padding: 10px; /* Add padding around the button */
+    border-radius: 50px; /* Optional: Add border radius for rounded corners */
+}
+
+.start-button-link:hover .start-button {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    background-color: transparent; /* Remove background color on hover */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .image-container {
+        flex-direction: row; /* Align items side by side on larger screens */
+        justify-content: flex-start; /* Align items to the start */
+        text-align: left; /* Left-align text on larger screens */
+    }
+
+    .image {
+        max-height: 700px; /* Maintain the original height */
+        width: auto; /* Keep the aspect ratio */
+        margin-right: 20px; /* Space between image and text */
+    }
+
+    .text-container {
+        max-width: 700px; /* Restrict text container width */
+    }
+
+    .text {
+        margin-top: 80px;
+        margin-left: 200px;
+    }
+
+    .start-button-link {
+        margin: 50px auto; /* Adjust button margin on larger screens */
+    }
+}

@@ -1,0 +1,124 @@
+/* Add Canva Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Canva+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.header {
+    background-color: #0a2e6b;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Gotham', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-text {
+    margin-left: 15px; /* Optional: Adjust margin if needed */
+    font-size: 30px; /* Adjust font size as needed */
+}
+
+.capture-text {
+    font-family: 'Canva Sans', sans-serif; /* Use Canva Sans font */
+    font-weight: bold; /* Make text bold */
+    font-size: 32px; /* Set font size */
+    margin-top: 30px; /* Adjust top margin */
+    margin-left: 110px; /* Adjust left margin */
+    margin-right: 20px; /* Adjust right margin */
+    color: #333; /* Adjust text color if needed */
+}
+
+.camera-container {
+    display: flex; /* Align video and captured images side by side */
+    align-items: flex-start; /* Align items at the top */
+    margin-left: 110px; /* Align the container with the capture text */
+    margin-top: 20px; /* Add space between the text and the camera */
+}
+
+.camera-video {
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: #000; /* Background color to indicate video area */
+    border: 2px solid #333; /* Optional: Add a border around the video */
+    border-radius: 10px; /* Optional: Add rounded corners to the video */
+}
+
+.image-container {
+    margin-left: 20px; /* Space between images */
+    position: relative; /* Ensure the button is positioned within the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captured-image {
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure image covers the area */
+    border: 2px solid #333; /* Optional: Add a border around the image */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    display: none; /* Hide image initially */
+}
+
+.bg-removed-image {
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure image covers the area */
+    border: 2px solid #333; /* Optional: Add a border around the image */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    display: none; /* Hide image initially */
+}
+
+.capture-button {
+    display: block; /* Ensure the button is displayed as a block element */
+    margin: 30px 0; /* Add top and bottom margin */
+    padding: 10px 20px; /* Adjust button padding */
+    font-family: 'Canva Sans', sans-serif; /* Use Canva Sans font */
+    font-weight: bold; /* Make text bold */
+    font-size: 18px; /* Set font size */
+    color: #fff; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-left: 250px; /* Align button to the left */
+    position: absolute;
+}
+
+.capture-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+#remove-bg-button {
+    position: absolute;
+    bottom: -98px; /* Position it below the image */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%);
+    margin: 30px 0; /* Add top and bottom margin */
+}
+
+.download-button {
+    
+    margin-top: 331px; /* Space between image and button */
+    font-family: 'Canva Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
